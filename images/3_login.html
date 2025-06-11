@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="150; url=4_desktop.html">
+  <title>Boot Screen</title>
+  <style>
+    * {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    img.windows {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      display: block;
+    }
+
+    .icone-container {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      width: 90px;
+      display: inline-block;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .icone-container:hover {
+      background-color: rgba(233, 245, 255, 0.5); 
+    }
+
+    .icone-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .entrar {
+      position: absolute;
+      top: 80px; 
+      left: 50%;
+      transform: translateX(-50%);
+      width: 400px;
+      height: auto;
+    }
+    .clicar {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  display: inline-block;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.clicar:hover {
+  background-color: rgba(233, 245, 255, 0.5); 
+}
+
+.clicar img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+  </style>
+</head>
+<body>
+
+  <img class="windows" src="desfocado.jpg" alt="Windows desfocado">
+
+  <div class="icone-container">
+    <img src="icones.png" alt="wifi e bateria">
+  </div>
+
+  <img class="entrar" src="entrar.png" alt="Usuário">
+  <img class="clicar" src="sign-in.png" alt="botaozinho">
+
+
+</body>
+</html>
