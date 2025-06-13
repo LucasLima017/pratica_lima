@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="150; url=4_desktop.html">
   <title>Boot Screen</title>
   <style>
     * {
@@ -37,7 +36,7 @@
     }
 
     .icone-container:hover {
-      background-color: rgba(233, 245, 255, 0.5); 
+      background-color: rgba(255, 255, 255, 0.150);
     }
 
     .icone-container img {
@@ -54,27 +53,46 @@
       width: 400px;
       height: auto;
     }
+    
     .clicar {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90px;
-  display: inline-block;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-}
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 120px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.08);
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      backdrop-filter: blur(10px);
+      text-decoration: none;
+    }
 
-.clicar:hover {
-  background-color: rgba(233, 245, 255, 0.5); 
-}
+    .clicar:hover {
+      background-color: rgba(255, 255, 255, 0.140);
+    }
 
-.clicar img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+    .clicar:active {
+      background-color: rgba(255, 255, 255, 0.04);
+      transform: translate(-50%, -50%) scale(0.98);
+    }
 
+    .clicar img {
+      display: none;
+    }
+
+    .clicar::after {
+      content: "Entrar";
+      font-family: 'Segoe UI'
+    }
   </style>
 </head>
 <body>
@@ -86,8 +104,7 @@
   </div>
 
   <img class="entrar" src="entrar.png" alt="Usuário">
-  <img class="clicar" src="sign-in.png" alt="botaozinho">
-
+  <a class="clicar" href="4_desktop.html"></a>
 
 </body>
 </html>
